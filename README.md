@@ -1,6 +1,6 @@
 # FootballScores
 
-The Alexandria app allows the user to view past, current and future Football Scores and fixtures.
+The Football Scores app allows the user to view past, current and future Football Scores and fixtures.
 
 # Getting Started
 
