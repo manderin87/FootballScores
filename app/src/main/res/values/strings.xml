@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Football Scores</string>
+    <string name="about_view_title">About</string>
+
+    <string name="share_text">Share</string>
+    <string name="widget_empty">No matches scheduled for today!</string>
+    <string name="about_menu">About</string>
+    <string name="about_content"><p>This application gets Football Matches Scores for the Premier League,Seria A,Bundesliga,Primera Division
+        and the Uefa Champions League.</p>
+        <p>All match data and images are acquired from the football-data.org free API and scores are not provided in realtime.</p>
+        <p>This application concept was taken from the Udacity Android Nano Degree Football Scores app and was refactored.</p></string>
+    <string name="splash_view_loading_message">Loading...</string>
+
+
+    <string name="day_title_yesterday">Yesterday</string>
+    <string name="day_title_today">Today</string>
+    <string name="day_title_tomorrow">Tomorrow</string>
+
+    <string name="matchday">Matchday: </string>
+    <string name="champions_league_group">Group Stages, Matchday: </string>
+    <string name="champions_league_161st">Round of 16, 1st Leg</string>
+    <string name="champions_league_162nd">Round of 16, 2nd Leg</string>
+    <string name="champions_league_QF1st">Quarter Final, 1st Leg</string>
+    <string name="champions_league_QF2nd">Quarter Final, 2nd Leg</string>
+    <string name="champions_league_SF1st">Semi Final, 1st Leg</string>
+    <string name="champions_league_SF2nd">Semi Final, 2nd Leg</string>
+    <string name="champions_league_final">Final</string>
+</resources>

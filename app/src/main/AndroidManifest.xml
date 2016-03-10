@@ -1,0 +1,65 @@
+<manifest package="com.hydeudacityproject.footballscores"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashView.SplashView"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FixturesView.FixturesView"
+            android:configChanges="orientation"
+            android:label="FixturesView"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <activity
+            android:name=".AboutView.AboutView"
+            android:configChanges="orientation"
+            android:label="FixturesView"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <provider
+            android:name=".Service.ContentProvider.FixtureContentProvider"
+            android:authorities="com.hydeudacityproject.footballscores"
+            android:exported="true" />
+
+        <receiver android:name=".Widget.FixturesWidgetProvider">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.hydeudacityproject.footballscores.appwidget.START_ACTION" />
+            </intent-filter>
+
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/fixtures_widget" />
+        </receiver>
+
+        <service android:name=".Widget.FixturesWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="true"/>
+
+        <service android:name=".Service.FixturesService"/>
+
+    </application>
+
+</manifest>
